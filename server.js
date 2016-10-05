@@ -8,6 +8,8 @@ var app = express();
 //SERVER STATIC CONTENT FOR TH APP FROM THE "PUBLIC DIRECTORY" IN THE APPLICATION DIRECTORY.
 
 app.use(express.static(process.cwd() + 'public'));
+//EXPRESS TO SERVER STATIC FILES 
+app.use('/assets', express.static(__dirname + '/public/assets/css'));
 
 app.use(bodyParser.urlencoded({
 	extended: false
