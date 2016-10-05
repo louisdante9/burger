@@ -1,5 +1,5 @@
 {
-  "name": "B=burger-time",
+  "name": "burger-time",
   "version": "1.0.0",
   "description": "burger logger using MySQL, Node, Express, Handlebars and a homemade ORM folloing MVC design pattern. ",
   "main": "server.js",
