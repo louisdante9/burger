@@ -1,7 +1,7 @@
 
 #Week of 14 Homework Node Express Handlebars
 
-Overview
+###Overview
 
 In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 Remember
@@ -16,7 +16,7 @@ Your app will store every burger in a database, whether devoured or not.
 Check out this video of the app for a run-through of how it works.
 Instructions
 
-App Setup
+###App Setup
 
 Create a GitHub repo called burger and clone it to your computer.
 Make a package.json file by running npm init from the command line.
@@ -100,8 +100,9 @@ Inside your burger directory, create a folder named views.
     * Create a button in `index.handlebars` that will submit the user input into the database.
 Directory structure:
 
-All the recommended files and directories from the steps above should look like the following structure:
-.
+All the recommended files and directories from the steps above should look like the following structure:.
+
+```
 ├── config
 │   ├── connection.js
 │   └── orm.js
@@ -134,7 +135,9 @@ All the recommended files and directories from the steps above should look like 
     ├── index.handlebars
     └── layouts
         └── main.handlebars
-One More Thing
+```
+
+###One More Thing
 
 This is a really tough homework assignment, but we want you to put in your best effort to finish it. If you get stuck at any point, don't hesitate to contact a TA or your instructor.
 ** Good Luck!**
