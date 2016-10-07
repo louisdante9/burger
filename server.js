@@ -7,9 +7,9 @@ var app = express();
 
 //SERVER STATIC CONTENT FOR TH APP FROM THE "PUBLIC DIRECTORY" IN THE APPLICATION DIRECTORY.
 
-app.use(express.static(process.cwd() + 'public'));
+app.use(express.static(process.cwd() + '/public'));
 //EXPRESS TO SERVER STATIC FILES 
-app.use('/assets', express.static(__dirname + '/public/assets/css'));
+//app.use('/assets', express.static(__dirname + '/public/assets/css'));
 
 app.use(bodyParser.urlencoded({
 	extended: false
@@ -26,7 +26,5 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
 
-var port = 3000;
-app.listen(process.env.PORT || port, function() {
-    console.log('Listening on PORT ' + port);
-});
+var port = process.env.PORT || 3000;
+app.listen(port);

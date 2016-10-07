@@ -1,7 +1,7 @@
 <div class="container">
     <div class="jumbotron">
         <img class="burger-time center-block" src="/../../assets/img/BurgerTime-Logo.png" alt="Burger Time Logo" />
-        <button type="button" class="burger-btn btn btn-lg btn-primary center-block" data-toggle="modal" data-target=".burgerModal">Create Some Burgers to Eat</button>
+        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#burger-Modal">Create Some Burgers for dat Boi to Eat</button>
     </div>
 
     <div class="row">
@@ -16,7 +16,7 @@
                             {{#unless this.devoured}}
                                 <div class="burgers col col-sm-12">
                                     <div class="col col-sm-6">
-                                        <img class="burger-img img-responsive" src="assets/img/burger.png" alt="Burger Image">
+                                        <img class="burger-img img-responsive" src="/assets/img/burger.png" alt="Burger Image">
                                         <p class="burgers-name">{{this.name}}</p>
                                     </div>
                                     <div class="col col-sm-3">
@@ -66,16 +66,16 @@
             </div>
         </div>
         <!-- Create Burgers Modal -->
-        <div class="modal fade burgerModal" tabindex="-1" role="dialog" aria-labelledby="burgerModal">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="burger-Modal" tabindex="-1" role="dialog" aria-labelledby="myBurgerModal">
+            <div class="modal-dialog modal-lg" role="document">
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h5 class="modal-title">Create Burgers</h5>
+                        <h5 class="modal-title" id="#myBurgerModal">Create Burgers</h5>
                     </div>
                     <form class="create-update-form" action="burgers/create" method="POST">
-                        <div class="modal-body text-center">
+                        <div class="burger-create modal-body">
                             <div class="form-group">
                                 <label for="burger">Burger Type</label>
                                 <textarea rows="2" class="form-control" id="burger" name="name" placeholder="Enter a Burger type. Yes, there is more than one type of Burger you know?"></textarea>

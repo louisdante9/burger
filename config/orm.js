@@ -60,9 +60,9 @@ var orm = {
     devour: function(table, objColVals, condition, cb) {
         var queryString = 'UPDATE ' + table;
 
-        queryString = queryString + 'SET ';
+        queryString = queryString + ' SET ';
         queryString = queryString + objToSql(objColVals);
-        queryString = queryString + 'WHERE ';
+        queryString = queryString + ' WHERE ';
         queryString = queryString + condition;
 
         console.log('\nQuery:', queryString);
@@ -74,7 +74,7 @@ var orm = {
     },
 
     clear: function(table, condition, cb) {
-        var queryString = 'DELETE FROM' + table;
+        var queryString = 'DELETE FROM ' + table;
 
         queryString = queryString + ' WHERE ';
         queryString = queryString + condition;
