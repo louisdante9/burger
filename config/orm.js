@@ -38,6 +38,7 @@ var orm = {
     //COLS ARE THE COUMNS WE WANT TO INSERT THE VALUES INTO
 
     create: function(table, cols, vals, cb) {
+        console.log(vals);
         var queryString = 'INSERT INTO ' + table;
 
         queryString = queryString + ' (';
@@ -45,7 +46,7 @@ var orm = {
         queryString = queryString + ') ';
         queryString = queryString + 'VALUES (';
         queryString = queryString + printQuestionMarks(vals.length);
-        queryString - queryString + ') ';
+        queryString = queryString + ') ';
 
         console.log('\nQuery:', queryString);
 
